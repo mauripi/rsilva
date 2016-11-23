@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE xml>
+<Context>
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+ 
+    <Resource
+            factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+            name="jdbc/tomcatDataSource"
+            auth="Container"
+            type="javax.sql.DataSource"
+            initialSize="1"
+            maxActive="20"
+            maxIdle="3"
+            minIdle="1"
+            maxWait="5000"
+            username="root"
+            password="1"
+            driverClassName="com.mysql.jdbc.Driver"
+            validationQuery="SELECT 'OK'"
+            testWhileIdle="true"
+            testOnBorrow="true"
+            numTestsPerEvictionRun="5"
+            timeBetweenEvictionRunsMillis="30000"
+            minEvictableIdleTimeMillis="60000"
+            url="jdbc:mysql://sql3.freesqldatabase.com:3306/sql3145819" />
+            
+<!--
+Host: sql3.freesqldatabase.com
+Database name: sql3145819
+Database user: sql3145819
+Database password: kpEurCbJC2
+Port number: 3306
+-->
+ 
+</Context>
